@@ -1,48 +1,261 @@
 .happy-birthday
-  .feeling
-    display: flex
-    width: calc(100%)
-    height: calc(100vh)
-    background-color: red
-    background: url('https://media0.giphy.com/media/3og0IFrHkIglEOg8Ba/200w.gif?cid=3640f6095beadb622f51464459be863f')
-    background-size: calc(100%) calc(100%)
-    color: white
-    padding: auto
-    align-items: center
-  .text
-    font-size: 1.3rem
-    color: white
-    font-family: fantasy
-    animation: foryou 5s
-    --web-kit-animation: foryou 5s
-    animation-iteration-count: 2
-    --web-kit-animation-iteration-count: 2
-  .image--track
-    position: absolute
-    width: 2em
-    height: 3em
-    margin-left: -1.5em
-    margin-top: -.5em
-    animation: rotation 1s
-    --web-kit-animation: rotation 1s
-    animation-iteration-count: 9
-    --web-kit-animation-iteration-count: 9
+  height: calc(100vh)
+  // width: calc(100%)
+  visibility: hidden
+  background: url('https://media0.giphy.com/media/n7qDnsZsSimpa/200w.gif?cid=3640f6095beb62c66131717859645924') no-repeat
+  background-size: calc(100%) calc(100%)
+  animation: getsunset 300s
+  --web-kit-animation: getsunset 300s
+  animation-delay: 8.5s
+  --web-kit-animation-delay: 8.5s
+  z-index: 0
+
+  .sunset
+    .text-box
+      display: flex
+      float: right
+      .box
+        visibility: hidden
+        height: calc(100vh)
+        width: calc(50vh)
+        border: solid 1px gray
+        background: url('https://media3.giphy.com/media/vNcGyBD8HdahO/200w.gif?cid=3640f6095beadcc3766d627551e00761') no-repeat
+        background-size: calc(100%) calc(100%)
+        animation: textbox 10s
+        --web-kit-animation: textbox 10s
+        animation-delay: 11s
+        --web-kit-animation-delay: 11s
+        animation-iteration-count: infinite
+
+      .tellyou
+        font-size: 1.1rem
+        color: white
+        margin: calc(10%) 10px auto 10px
+        font-weight: bold
+
+  @media only screen and (min-width: 224px)
   .road-track
     display: flex
-    width: calc(100%)
-    height: calc(100vh)
     .rt--step-1
       position: absolute
       width: 5em
       height: 7em
       transform: rotate(20deg)
       margin: calc(35%) 5px 0 calc(5%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
     .rt--step-2
       position: absolute
       width: 5em
       height: 7em
       transform: rotate(45deg)
       margin: calc(27%) 5px 0 calc(8%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 0.9s
+      --web-kit-animation-delay: 0.9s
+    .rt--step-3
+      position: absolute
+      width: 5em
+      height: 7em
+      transform: rotate(20deg)
+      margin: calc(32%) 5px 0 calc(16%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 1.7s
+      --web-kit-animation-delay: 1.7s
+    .rt--step-4
+      position: absolute
+      width: 5em
+      height: 7em
+      transform: rotate(45deg)
+      margin: calc(24%) 5px 0 calc(18%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 2.6s
+      --web-kit-animation-delay: 2.6s
+    .rt--step-5
+      position: absolute
+      width: 5em
+      height: 7em
+      transform: rotate(20deg)
+      margin: calc(27%) 5px 0 calc(26%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 3.5s
+      --web-kit-animation-delay: 3.5s
+    .rt--step-6
+      position: absolute
+      width: 5em
+      height: 7em
+      transform: rotate(45deg)
+      margin: calc(19%) 5px 0 calc(28%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 4.4s
+      --web-kit-animation-delay: 4.4s
+    .rt--step-7
+      position: absolute
+      width: 5em
+      height: 7em
+      transform: rotate(20deg)
+      margin: calc(22%) 5px 0 calc(36%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 5.3s
+      --web-kit-animation-delay: 5.3s
+    .rt--step-8
+      position: absolute
+      width: 5em
+      height: 7em
+      transform: rotate(45deg)
+      margin: calc(15%) 5px 0 calc(38%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 6.2s
+      --web-kit-animation-delay: 6.2s
+    .rt--step-9
+      position: absolute
+      width: 5em
+      height: 7em
+      transform: rotate(20deg)
+      margin: calc(18%) 5px 0 calc(46%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 7.1s
+      --web-kit-animation-delay: 7.1s
+    .rt--step-10
+      position: absolute
+      width: 5em
+      height: 7em
+      transform: rotate(45deg)
+      margin: calc(10%) 5px 0 calc(48%)
+      visibility: hidden
+      animation: step 1s
+      --web-kit-animation: step 1s
+      animation-delay: 8s
+      --web-kit-animation-delay: 8s
+
+  @media only screen and (max-width: 750px)
+    .road-track
+      display: flex
+      .rt--step-1
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(20deg)
+        margin: calc(85%) 5px 0 calc(5%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+      .rt--step-2
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(45deg)
+        margin: calc(77%) 5px 0 calc(8%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 0.9s
+        --web-kit-animation-delay: 0.9s
+      .rt--step-3
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(20deg)
+        margin: calc(72%) 5px 0 calc(16%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 1.7s
+        --web-kit-animation-delay: 1.7s
+      .rt--step-4
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(45deg)
+        margin: calc(64%) 5px 0 calc(18%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 2.6s
+        --web-kit-animation-delay: 2.6s
+      .rt--step-5
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(20deg)
+        margin: calc(67%) 5px 0 calc(26%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 3.5s
+        --web-kit-animation-delay: 3.5s
+      .rt--step-6
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(45deg)
+        margin: calc(59%) 5px 0 calc(28%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 4.4s
+        --web-kit-animation-delay: 4.4s
+      .rt--step-7
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(20deg)
+        margin: calc(52%) 5px 0 calc(36%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 5.3s
+        --web-kit-animation-delay: 5.3s
+      .rt--step-8
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(45deg)
+        margin: calc(45%) 5px 0 calc(38%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 6.2s
+        --web-kit-animation-delay: 6.2s
+      .rt--step-9
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(20deg)
+        margin: calc(48%) 5px 0 calc(46%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 7.1s
+        --web-kit-animation-delay: 7.1s
+      .rt--step-10
+        position: absolute
+        width: 5em
+        height: 7em
+        transform: rotate(45deg)
+        margin: calc(35%) 5px 0 calc(48%)
+        visibility: hidden
+        animation: step 1s
+        --web-kit-animation: step 1s
+        animation-delay: 8s
+        --web-kit-animation-delay: 8s
 
   @keyframes foryou
     0%
@@ -66,3 +279,71 @@
       transform: rotate(270deg)
     100%
       transform: rotate(360deg)
+
+  @keyframes step
+    0%
+      visibility: visible
+    100%
+      visibility: visible
+
+  @keyframes getsunset
+    0%
+      visibility: visible
+    100%
+      visibility: visible
+
+  @keyframes textbox
+    0%
+      visibility: visible
+      margin-top: calc(100%)
+    10%
+      visibility: visible
+      margin-top: calc(95%)
+    30%
+      visibility: visible
+      margin-top: calc(75%)
+    50%
+      visibility: visible
+      margin-top: calc(60%)
+    70%
+      visibility: visible
+      margin-top: calc(40%)
+    80%
+      visibility: visible
+      margin-top: calc(20%)
+    100%
+      visibility: visible
+      margin-top: 0
+      animation-play-state: paused
+      --web-kit-animation-play-state: paused
+
+.feeling
+  display: flex
+  width: calc(100%)
+  height: calc(100vh)
+  background-color: red
+  background: url('https://media0.giphy.com/media/3og0IFrHkIglEOg8Ba/200w.gif?cid=3640f6095beadb622f51464459be863f')
+  background-size: calc(100%) calc(100%)
+  color: white
+  padding: auto
+  align-items: center
+
+.text
+  font-size: 1.3rem
+  color: white
+  font-family: fantasy
+  animation: foryou 5s
+  --web-kit-animation: foryou 5s
+  animation-iteration-count: 2
+  --web-kit-animation-iteration-count: 2
+
+.image--track
+  position: absolute
+  width: 2em
+  height: 3em
+  margin-left: -1.5em
+  margin-top: -.5em
+  animation: rotation 1s
+  --web-kit-animation: rotation 1s
+  animation-iteration-count: 9
+  --web-kit-animation-iteration-count: 9
